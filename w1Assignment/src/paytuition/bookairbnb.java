@@ -1,4 +1,3 @@
-package paytuition;
 
 Objects (with Behaviors and State): 
 	Object : tourist

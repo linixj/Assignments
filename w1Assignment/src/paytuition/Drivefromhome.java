@@ -1,4 +1,4 @@
-package paytuition;
+/*package paytuition;
 
 Scenario : Drive home
 
@@ -13,7 +13,7 @@ Description : A student is driving home from school.
 		Object : Car
 			State : drivablility
 			Behavior : getStarted, getStopped()
-			
+*/			
 
 	class Student{
 		String name;
@@ -33,7 +33,7 @@ Description : A student is driving home from school.
 		void getStopped(Student s, Car c){}
 	
 		}
-	}
+	
 
 	
 	class Drivinghome{
@@ -43,9 +43,10 @@ Description : A student is driving home from school.
 			Student jojo = new Student();
 			jojo.name = "Jojo";
 			
+			String homeaddress = "422YaleAve"
 			jojo.startTheCar(honda);
 			jojo.driveTheCar(honda);
-			jojo.arriveAtHome(jojo);
+			jojo.arriveAtHome(homeaddress);
 			honda.getStopped(jojo, honda);
 		}
 

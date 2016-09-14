@@ -1,11 +1,12 @@
+/*
 Scenario : Travelling to LA
 
 Description : A tourist is trying to find the cheapest flight to LA.
 
 Objects (with Behaviors and State): 
 	Object : tourist
-		State : name, Starting
-		Behavior : visitSearchingWebsite(), typeStartingAndDestination(), findTheCheapestFlight(), placeOrderForFlight()
+		State : name, arrivallocation
+		Behavior : visitSearchingWebsite(), typeDepartureLocationAndArrivalLocation(), findTheCheapestFlight(), placeOrderForFlight()
 	
 	
 	Object : SearchingWebsite
@@ -13,15 +14,16 @@ Objects (with Behaviors and State):
 		Behavior : displayAvailableFlights(), directToAirlineWebsite()
 		
 	Object : Flight
-		State : starting, destination, price, airline
+		State : price, departureTime, departureLocation, arrivalTime, arrivalLocation
 		Behavior : getPrice()
 
-		
+*/
+
 class Tourist{
 	String name;
-	String Starting;
+	String departurelocation;
+	String arrivallocation;
 	void visitSearchingWebsite(SearchingWebsite sw){}
-	void typeStartingAndDestination(){}
 	Flight findTheCheapestFlight(Flight[] flights){}
 	void placeOrderForFlight(Flight, Airlinewebsite){}
 	}
@@ -29,7 +31,7 @@ class Tourist{
 }
 
 class SearchingWebsite{
-	Flight[] flights; //Array of flights
+	Flight[] flights; 
 	Flight[] displayAvailableFlights(){}
 	void directToAirlineWebsite(Tourist t, Flight f){}			
 }
@@ -37,6 +39,7 @@ class SearchingWebsite{
 class Flight{
 	String flightstarting;
 	String flightdestination;
+	String departureTime;
 	Float airline;
 	Float getPrice(){}	
 }
@@ -46,17 +49,15 @@ class Flight{
 class TravelToLa{
 	public static <flightstarting, flightdestination> void main(String args[]){
 		SearchingWebsite google = new SearchingWebsite();
-
-
-	    Flight starting seattle = new flightstarting;seattle name = "Seattle"
-	    Flight destination la = new flightdestination;la name = "Los Angeles"
-	    Flight[] flights = {seattle, la};
 		
 		Tourist jojo = new Tourist();
 		jojo.name = "Jojo";
 		
 		jojo.visitSearchingWebsite(google);
-		jojo.typeStartingAndDestination();
+		jojo.typeDepartureLocationAndArrivalLocation();
+		String departureTime = "09/06/2016"
+		String departureLocation = "seattle"
+		String arrivalLocation = "los angles"
 		Flight[] flights = google.displayAvailableFlights();
 		Flight flight = jojo.findTheCheapestFlight(flights);
 		jojo.placeOrderForFlight(flight, airlinewebsite);
