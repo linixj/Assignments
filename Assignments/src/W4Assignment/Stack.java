@@ -1,5 +1,6 @@
 package W4Assignment;
-/**Bonus: 
+/**
+ * Bonus: 
 	Design a java class that encapsulate the data structure Stack (Last in First out). The class has 2 methods:
 		(push): method for adding items to stack, the push operation adds items to the top of the list
 		(pop): method for retrieving items from the stack. The pop operation removes an item from the top of the list, and returns its value to the caller.

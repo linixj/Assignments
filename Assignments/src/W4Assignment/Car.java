@@ -1,5 +1,6 @@
 package W4Assignment;
-/**4. Design and implement a class called Car. You need to create necessary attributes for this class, and method if needed
+/**
+ * 4. Design and implement a class called Car. You need to create necessary attributes for this class, and method if needed
 Define the Car constructor to initialize these values (in that order). Include getter and setter methods for all instance data.
 */
 public class Car {

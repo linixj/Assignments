@@ -1,7 +1,3 @@
-package W4Assignment;
-/**
- * 1. Write JUnitTest for all the problems in assignemnt3.
- */
 import static org.junit.Assert.*;
 
 import org.junit.Test;

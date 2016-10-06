@@ -1,6 +1,6 @@
 package W4Assignment;
 /**
-3. Write a class named GasTank containing:
+*3. Write a class named GasTank containing:
 An instance variable named amount of type double, initialized to 0.
 A method named addGas that accepts a parameter of type double . The value of the amount instance variable is increased by the value of the parameter.
 A method named useGas that accepts a parameter of type double . The value of the amount instance variable is decreased by the value of the parameter.
