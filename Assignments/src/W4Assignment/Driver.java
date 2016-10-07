@@ -4,7 +4,7 @@ package W4Assignment;
 */
 public class Driver {
    private String name;
-   private double gasGasLevel;
+   private double gadGasLevel;
    
    public Driver(String name){
 	   this.name = name;

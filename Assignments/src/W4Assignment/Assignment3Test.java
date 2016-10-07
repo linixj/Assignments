@@ -4,6 +4,9 @@ package W4Assignment;
  */
 import static org.junit.Assert.*;
 
+import java.io.ByteArrayOutputStream;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 public class Assignment3Test {
@@ -20,29 +23,32 @@ public class Assignment3Test {
 public class countDigitsTest{
 	@Test
 	public void test(){
-		countDigitsTest test = new countDigitsTest();
+		Assignment3 test = new Assignment3();
 		Assert.assertTrue((test).countDigits(100) == 1);
 		Assert.assertTrue(test.countDigits(1300) == 0);
 	}
 
   }
 
-}
 
 public class printNumbersTest{
+	private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	@Test
 	public void test(){
+		Assignment3 test = new Assignment3();
+		
 		int[] output = {1,3,5};
-		assertArrayEquals(test.prinNumbers(3), output);
+		Assert.assertArrayEquals(test.printNumbers(3), output);
 		int[] output1 = {0,2,4,6};
-		assertArrayEquals(test.prinNumber(4), output1);
+		Assert.assertArrayEquals(test.printNumbers(4), output1);
 	}
 }
 
 public class pascalsTriangleTest{
 	@Test
 	public void test(){
-		pascalTriangle test = new pascalTriangle();
+		Assignment3 test = new Assignment3();
+		
 		int[][] output = {{1},{1,1},{1,2,1}};
 		assertArrayEquals(test.generate(3), output);
 	}
@@ -51,7 +57,7 @@ public class pascalsTriangleTest{
 public class reverseVowelsTest{
 	@Test
 	public void test(){
-		reverseVowels test = new reverseVowels();
+		Assignment3 test = new Assignment3();
 		assertEquals(test.reverseVowels("hello"), "holle");
 		assertEquals(test.reverseVowels("apple"), "eppla");
 	}
@@ -60,7 +66,7 @@ public class reverseVowelsTest{
 public class lengthOfLastWordTest{
 	@Test
 	public void test(){
-		lengthOfLastWord test = new lengthOfLastWord();
+		Assignment3 test = new Assignment3();
 		assertTrue(test.lengthOfLastWord("   apple") == 5);
 		assertTrue(test.lengthOfLastWord("apple  Pass  ") == 0);
 	}
@@ -69,8 +75,8 @@ public class lengthOfLastWordTest{
 public class reverseString2Test{
 	@Test
 	public void test(){
-		reverseString2 test = new reverseString2();
-		int output = test.reverseString2("I love cheese");
+		Assignment3 test = new Assignment3();
+		String output = test.reverseString2("I love cheese");
 		assertEquals("cheese love I", output);
 	}
 }
@@ -78,11 +84,12 @@ public class reverseString2Test{
 public class checkMessage{
 	@Test
 	public void test(){
-		checkMessage test = new checkMessage();
+		Assignment3 test = new Assignment3();
 		assertTrue(test.checkMessage("SOSSOSSOS") == 0);
 		assertTrue(test.checkMessage("S0SSSSSOP") == 3);
 		assertTrue(test.checkMessage("COASCESAS") == 5);
 	}
+}
 }
 
 
