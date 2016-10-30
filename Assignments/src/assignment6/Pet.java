@@ -71,4 +71,5 @@ public class Pet {
 		Spot.setSex(1);
 		System.out.println(Spot);
 	}
+	
 }

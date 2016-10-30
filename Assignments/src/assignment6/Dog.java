@@ -74,4 +74,5 @@ public class Dog extends Pet implements Boardable {
  	  Spot.setSex(3);
    }
    
+   
 }
