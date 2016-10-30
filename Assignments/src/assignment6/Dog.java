@@ -73,4 +73,5 @@ public class Dog extends Pet implements Boardable {
  	  Dog Spot = new Dog("Spot", "Susan","white", "medium");
  	  Spot.setSex(3);
    }
+   
 }

@@ -72,5 +72,4 @@ public class Cat extends Pet implements Boardable {
     	  Cat Tom = new Cat("Tom", "Bob","black", "short");
     	  Tom.setSex(3);
       }
-
 }
