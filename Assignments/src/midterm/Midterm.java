@@ -60,8 +60,8 @@ public class Midterm {
 			}
 		    int sum = 0;
 			int s = 1;
-			for(int i = title.length(); i >= 0; i--){
-				sum += (title.charAt(i) - 'A' +1) * s;
+			for(int i = title.length(); i >= 0; i--){	// i should be initialized as title.length() -1, or it will be out of bounds;
+				sum += (title.charAt(i) - 'A' +1) * s;	// -2;
 				s *= 26;
 			}
 			return sum;
@@ -83,8 +83,8 @@ public class Midterm {
 		 int counter = 0;
 		 HashSet<Integer> s = new HashSet<Integer>();
 		 for(int i = 0; i< nums.length; i++){
-			 if(s.contains(target - nums[i])){
-				 counter++;
+			 if(s.contains(target - nums[i])){	// your program will never go into the if{} block;
+				 counter++;			// think about it; 
 				 s.add(nums[i]);
 			 }
 		 }	
