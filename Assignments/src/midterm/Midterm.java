@@ -85,8 +85,8 @@ public class Midterm {
 		 for(int i = 0; i< nums.length; i++){
 			 if(s.contains(target - nums[i])){	// your program will never go into the if{} block;
 				 counter++;			// think about it; 
-				 s.add(nums[i]);
 			 }
+			  s.add(nums[i]);
 		 }	
 		 return counter;
 	 }
